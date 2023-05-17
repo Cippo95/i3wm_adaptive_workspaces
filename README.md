@@ -1,6 +1,7 @@
 # i3wm adaptive workspaces
 
 This repository contains my basic way of using i3wm.
+You can start from this and modify it as you please.
 
 ## Inspiration
 
@@ -8,14 +9,26 @@ This way of using i3wm is inspired by GNOME DE's workflow.
 
 ## Core concepts
 
-- $mod is the Windows/Super key, it would be great to use Alt but there are many applications that use it for shortcuts.
+- The main modifier, `$mod`, is the Windows/Super key:
+  - Since it is on the left I try to keep every shortcut composed with a key on the right (touch typing best practice).
+  - It would be great to use Alt but there are many applications that use it for shortcuts.
 
-- In i3wm you have workspaces linked to some particular key; here when you want a new workspace you just press $mod+i (i for **i**nsert).
-When you want to go to the **n**ext workspace you press $mod+n, and $mod+p for the **p**revious workspace.
+- In i3wm you have workspaces linked to keys; here it different and inspired by GNOME (with different shortcuts): 
+  - Insert new workspace: `$mod+i`.
+  - Next workspace: `$mod+n`.
+  - Previous workspace: `$mod+p`.
 
-- In GNOME it is great to press the $mod button to open apps, here you have to press $mod+Enter.
-> There's no terminal shortcut, you open it through the main launcher, which is rofi.
+- Press `$mod+Enter` to open your app launcher (I use rofi):
+  - I think that it is not smart to keep a shortcut only for the terminal, just open it as any other app.
 
-- Layout modifications are under a MODIFY mode, accessible with $mod+m (guess what m stands for).
+- To modify the layout you have to enter the MODIFY mode: `$mod+m` (shortcuts similar to default i3wm).
+  - `$mod+;` to switch beetween tabbed and splitted layout (I do this often so it is out of the mode).
 
-- You can reload the config file, restart i3wm or exit with the ADMIN mode, accessible with $mod+slash (I have decided slash because it is easier to press then a while holding the $mod key).
+- To reload, restart or exit you have to enter the ADMIN mode: `$mod+/`.
+  - I have decided `/` instead of `a` (for admin) because of touch typing best practice.
+
+- Enter USER mode, for any interesting binding that you need: `$mod+u`.
+  - Using i3wm this way you could have workspaces number skip, you can sort them pressing `r` while being in USER mode.
+  - For example in my full config I have stuff to move audio beetween headphones and speaker etc.
+
+The scripts in `/scripts` are to insert a new workspace, move a container to the next workspace and sorting workspaces.
