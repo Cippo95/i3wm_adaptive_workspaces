@@ -18,8 +18,8 @@ This way of using i3wm is inspired by GNOME DE's workflow.
 
 - In i3wm you have workspaces linked to keys; here it is different and inspired by GNOME (with different shortcuts): 
   - Insert new workspace: `$mod+i`.
-  - Next workspace: `$mod+n` (`$mod+Ctrl+n` to move a container to the next workspace).
-  - Previous workspace: `$mod+p` (`$mod+Ctrl+p` to move a container to the prev workspace).
+  - Next workspace: `$mod+n` (to move a container to the next workspace `$mod+Ctrl+n`).
+  - Previous workspace: `$mod+p` (to move a container to the prev workspace `$mod+Ctrl+p`).
 
 - Press `$mod+Enter` to open your app launcher (I use rofi):
   - I think that it is not smart to keep a shortcut only for the terminal, just open it as any other app.
