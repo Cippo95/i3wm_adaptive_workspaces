@@ -28,7 +28,7 @@ This way of using i3wm is inspired by GNOME DE's workflow.
   - I have decided `/` instead of `a` (for admin) because of touch typing best practice.
 
 - Enter USER mode, for any interesting binding that you need: `$mod+u`.
-  - Using i3wm this way you could have workspaces number skip, you can sort them pressing `r` while being in USER mode.
+  - Using i3wm this way you could have workspaces number skip, you can reorder them pressing `r` while being in USER mode.
   - For example in my full config I have stuff to move audio beetween headphones and speaker etc.
 
-The scripts in `/scripts` are to insert a new workspace, move a container to the next workspace and sorting workspaces.
+The scripts in `/scripts` are to insert a new workspace, move a container to the next workspace and reorder workspaces.
