@@ -9,6 +9,8 @@ This way of using i3wm is inspired by GNOME DE's workflow.
 
 ## Core concepts
 
+The configuration file should be pretty easy to understand but here the main bindings and ideas:
+
 - The main modifier, `$mod`, is the Windows/Super key:
   - Since it is on the left I try to keep every shortcut composed with a key on the right (touch typing best practice).
   - It would be great to use Alt but there are many applications that use it for shortcuts.
