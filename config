@@ -1,0 +1,163 @@
+# i3wm adaptive workspaces
+# default configuration, rofi is a dependency
+
+### MISC ###
+
+	# font
+	font pango: Monospace Bold 9  
+
+### VARIABLES ###
+
+	# windows key as modifier (alt can conflict with some app)
+	set $mod Mod4
+
+	# new workspace script
+	set $new_workspace ~/.config/i3/scripts/new_ws.sh
+
+	# move container to next workspace script
+	set $move_to_next ~/.config/i3/scripts/move_to_next_ws.sh
+	
+	# sort workspaces
+	set $sort_workspaces ~/.config/i3/scripts/sort_wss.sh
+	
+	# rofi configuration
+	set $launcher "rofi -show combi -modes combi -combi-modes 'window,drun' -show-icons" 
+
+### BINDINGS ###
+
+	# kill focused window
+	bindsym Ctrl+Shift+q kill
+
+	# application launcher 
+	bindsym $mod+Return exec --no-startup-id $launcher
+
+	# change focus
+	bindsym $mod+h focus left
+	bindsym $mod+j focus down
+	bindsym $mod+k focus up
+	bindsym $mod+l focus right
+
+	# move focused window
+	bindsym $mod+Ctrl+h move left
+	bindsym $mod+Ctrl+j move down
+	bindsym $mod+Ctrl+k move up
+	bindsym $mod+Ctrl+l move right
+
+	# switch to next workspace
+	bindsym $mod+n workspace next; 
+
+	# switch to previous workspace
+	bindsym $mod+p workspace prev;
+
+	# create new workspace and open launcher 
+	bindsym $mod+i exec --no-startup-id $new_workspace; exec --no-startup-id $launcher 
+
+	# move container to next workspace (created if not present)
+	bindsym $mod+Ctrl+n exec --no-startup-id $move_to_next
+
+	# move container to previous workspace
+	bindsym $mod+Ctrl+p move container to workspace prev
+
+	# toggle tabbed or split 
+	bindsym $mod+semicolon layout toggle tabbed split 
+
+	# toggle tiling / floating
+	bindsym $mod+Ctrl+space floating toggle
+
+	# change focus between tiling / floating windows
+	bindsym $mod+space focus mode_toggle
+
+### MODES ###
+
+	# admin mode: reload config, restart it or exit
+	mode "ADMIN ($mod+slash)" {
+
+		# reload the configuration file
+		bindsym c reload; mode "default"
+
+		# restart i3 inplace 
+		bindsym r restart; mode "default" 
+
+		# exit i3 (logs you out of your X session)
+		bindsym e exec "i3-nagbar -t warning -m 'Do you want to exit?' -B 'Yes' 'i3-msg exit'"; mode "default"
+
+		# exit 
+		bindsym $mod+slash mode "default"
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
+	}
+	bindsym $mod+slash mode "ADMIN ($mod+slash)"
+
+	# modify mode: modify the layout 
+	mode "MODIFY ($mod+m)" {
+
+		# horizontal
+		bindsym h split h; mode "default"
+
+		# vertical
+		bindsym v split v; mode "default"
+
+		# stacked
+		bindsym s layout stacking; mode "default"
+
+		# tabbed 
+		bindsym w layout tabbed; mode "default"
+
+		# fullscreen
+		bindsym f fullscreen; mode "default"
+
+		# toggle vertical horizontal 
+		bindsym e layout toggle split; mode "default"
+
+		# focus the parent container
+		bindsym a focus parent; mode "default"
+
+		# focus the child container
+		bindsym d focus child; mode "default"
+
+		# exit
+		bindsym $mod+m mode "default"
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
+	}
+	bindsym $mod+m mode "MODIFY ($mod+m)";
+
+	# resize mode: resize current window with keyboard 
+	mode "RESIZE ($mod+r)" {
+
+		bindsym h resize shrink width 10 px or 10 ppt
+		bindsym j resize grow height 10 px or 10 ppt
+		bindsym k resize shrink height 10 px or 10 ppt
+		bindsym l resize grow width 10 px or 10 ppt
+
+		# exit 
+		bindsym $mod+r mode "default"
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
+	}
+	bindsym $mod+r mode "RESIZE ($mod+r)"
+
+	# user mode: custom bindings 
+	mode "USER ($mod+u)" {
+
+		# sort workspaces number
+		bindsym r exec --no-startup-id $sort_workspaces; mode "default"	
+
+		# exit
+		bindsym $mod+u mode "default"
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
+	}
+	bindsym $mod+u mode "USER ($mod+u)"
+
+### BAR ###
+
+	bar {
+		status_command i3status
+	}
+
+### EXECS ###
+	# add here your executables
+	
+### WINDOWS RULES ### 
+	# add here your windows rules
