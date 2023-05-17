@@ -13,10 +13,13 @@ This way of using i3wm is inspired by GNOME DE's workflow.
   - Since it is on the left I try to keep every shortcut composed with a key on the right (touch typing best practice).
   - It would be great to use Alt but there are many applications that use it for shortcuts.
 
+- You move beetween containers with hjkl (h: left, j: down, k: up, l: right), inspired by vim. 
+  - Add `Ctrl` to move a containter, e.g. `$mod+Ctrl+h` moves a container on the left.
+
 - In i3wm you have workspaces linked to keys; here it is different and inspired by GNOME (with different shortcuts): 
   - Insert new workspace: `$mod+i`.
-  - Next workspace: `$mod+n`.
-  - Previous workspace: `$mod+p`.
+  - Next workspace: `$mod+n` (`$mod+Ctrl+n` to move a container to the next workspace).
+  - Previous workspace: `$mod+p` (`$mod+Ctrl+p` to move a container to the prev workspace).
 
 - Press `$mod+Enter` to open your app launcher (I use rofi):
   - I think that it is not smart to keep a shortcut only for the terminal, just open it as any other app.
