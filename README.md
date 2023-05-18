@@ -1,6 +1,6 @@
 # i3wm adaptive workspaces
 
-This repository contains my basic way of using i3wm.
+This repository contains my basic way of using i3wm.  
 It is a configuration with a different idea on how to use workspaces.  
 You can start from this and modify it as you please.  
 
