@@ -4,6 +4,9 @@ This repository contains my basic way of using i3wm.
 It is a configuration with a different idea on how to use workspaces.  
 You can start from this and modify it as you please.  
 
+## Keyboard bindings
+![keybord bindings](https://github.com/Cippo95/i3wm_adaptive_workspaces/blob/main/keyboard-layout.png)
+
 ## Inspiration
 
 This way of using i3wm is inspired by GNOME DE's workflow and vim.
