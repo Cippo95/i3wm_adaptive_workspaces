@@ -5,7 +5,9 @@ It is a configuration with a different idea on how to use workspaces.
 You can start from this and modify it as you please.  
 
 ## Keyboard bindings
-> Modes in red and yellow for the kill shorcut.
+Modes in red, kill shorcut in yellow, other shortcuts are white (+Ctrl to move containters).  
+Remember to press $mod plus the shortcut (kill shortcut excluded).  
+
 ![keybord bindings](https://github.com/Cippo95/i3wm_adaptive_workspaces/blob/main/keyboard-layout.png)
 
 ## Inspiration
