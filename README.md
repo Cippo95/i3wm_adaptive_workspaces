@@ -20,6 +20,7 @@ The configuration file should be pretty easy to understand but here the main bin
 
 - The main modifier, `$mod`, is the Windows/Super key:
   - Since it is used with the left hand primary shortcuts are composed with a right hand key (touch typing best practice).
+    - Except resize that for now stays on r.
   - It would be great to use Alt but there are many applications that use it for shortcuts.
 
 - You move beetween containers with `$mod+h`or `$mod+j` or `$mod+k` or `$mod+l` inspired by vim (h: left, j: down, k: up, l: right). 
