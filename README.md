@@ -22,7 +22,7 @@ The configuration file should be pretty easy to understand but here the main bin
   - Since it is used with the left hand primary shortcuts are composed with a right hand key (touch typing best practice).
   - It would be great to use Alt but there are many applications that use it for shortcuts.
 
-- You move beetween containers with `$mod+``h`or `j` or `k` or `l` as in vim (h: left, j: down, k: up, l: right). 
+- You move beetween containers with `$mod+h`or `$mod+j` or `$mod+k` or `$mod+l` inspired by vim (h: left, j: down, k: up, l: right). 
   - Add `Ctrl` to move a containter, e.g. `$mod+Ctrl+h` moves a container on the left.
 
 - In i3wm workspaces are linked to keys; here it is different and inspired by GNOME (with different shortcuts): 
