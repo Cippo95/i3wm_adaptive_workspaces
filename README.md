@@ -4,15 +4,18 @@ This repository contains my basic way of using i3wm.
 It is a configuration with a different idea on how to use workspaces.  
 You can start from this and modify it as you please.  
 
+## Inspiration
+
+My way of using i3wm is inspired by GNOME DE's workflow and vim.  
+It is meant to be used with any keyboard with QWERTY layout.  
+
 ## Keyboard bindings
 Modes in red, kill shorcut in yellow, other shortcuts are white (+Ctrl to move containters).  
 Remember to press $mod plus the shortcut (kill shortcut excluded).  
 
 ![keybord bindings](https://github.com/Cippo95/i3wm_adaptive_workspaces/blob/main/keyboard-layout.png)
 
-## Inspiration
-
-This way of using i3wm is inspired by GNOME DE's workflow and vim.
+I have used this site to make the layout picture: http://www.keyboard-layout-editor.com
 
 ## Core concepts
 
