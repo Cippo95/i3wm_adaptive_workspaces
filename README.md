@@ -5,6 +5,7 @@ It is a configuration with a different idea on how to use workspaces.
 You can start from this and modify it as you please.  
 
 ## Keyboard bindings
+> Modes in red and yellow for the kill shorcut.
 ![keybord bindings](https://github.com/Cippo95/i3wm_adaptive_workspaces/blob/main/keyboard-layout.png)
 
 ## Inspiration
