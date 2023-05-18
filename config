@@ -58,8 +58,8 @@
 	# move container to previous workspace
 	bindsym $mod+Ctrl+p move container to workspace prev
 
-	# toggle tabbed or split 
-	bindsym $mod+semicolon layout toggle tabbed split 
+	# on/off (toggle) tabbed or split 
+	bindsym $mod+o layout toggle tabbed split 
 
 	# toggle tiling / floating
 	bindsym $mod+Ctrl+space floating toggle
@@ -69,8 +69,8 @@
 
 ### MODES ###
 
-	# admin mode: reload config, restart it or exit
-	mode "ADMIN ($mod+slash)" {
+	# yawn mode: reload config, restart it or exit
+	mode "YAWN ($mod+y)" {
 
 		# reload the configuration file
 		bindsym c reload; mode "default"
@@ -86,7 +86,7 @@
 		bindsym Return mode "default"
 		bindsym Escape mode "default"
 	}
-	bindsym $mod+slash mode "ADMIN ($mod+slash)"
+	bindsym $mod+slash mode "YAWN ($mod+y)"
 
 	# modify mode: modify the layout 
 	mode "MODIFY ($mod+m)" {
