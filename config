@@ -82,11 +82,11 @@
 		bindsym e exec "i3-nagbar -t warning -m 'Do you want to exit?' -B 'Yes' 'i3-msg exit'"; mode "default"
 
 		# exit 
-		bindsym $mod+slash mode "default"
+		bindsym $mod+y mode "default"
 		bindsym Return mode "default"
 		bindsym Escape mode "default"
 	}
-	bindsym $mod+slash mode "YAWN ($mod+y)"
+	bindsym $mod+y mode "YAWN ($mod+y)"
 
 	# modify mode: modify the layout 
 	mode "MODIFY ($mod+m)" {
